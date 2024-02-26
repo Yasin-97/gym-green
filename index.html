@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FAVICON ===============-->
-    <link
+    <!-- <link
       rel="shortcut icon"
       href="assets/img/favicon.png"
       type="image/x-icon"
-    />
+    /> -->
 
     <!--=============== REMIXICON ===============-->
     <link
@@ -19,32 +19,39 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <title>Responsive gym website - Bedimcode</title>
+    <script
+      src="https://kit.fontawesome.com/a206e35f65.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>LULU GYM</title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
-          <img src="assets/img/logo-nav.png" alt="logo" />BEROTR
+          <!-- <img src="assets/img/logo-nav.png" alt="logo" /> -->
+          <!-- <span class="logo__img" style="color: pink; font-size: 2rem">C</span> -->
+          <span class="logo__title"
+            >LULU<span class="logo__subtitle">Gym </span></span
+          >
         </a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
+              <a href="#home" class="nav__link active-link">خونه</a>
             </li>
             <li class="nav__item">
-              <a href="#program" class="nav__link">Program</a>
+              <a href="#program" class="nav__link">برنامه</a>
             </li>
             <li class="nav__item">
-              <a href="#choose" class="nav__link">Choose Us</a>
+              <a href="#choose" class="nav__link">انتخاب ما</a>
             </li>
             <li class="nav__item">
-              <a href="#pricing" class="nav__link">Pricing</a>
+              <a href="#pricing" class="nav__link">تعرفه</a>
             </li>
             <div class="nav__link">
-              <a href="#footer" class="button nav__button"> Register Now</a>
+              <a href="#footer" class="button nav__button">شروع کن</a>
             </div>
           </ul>
           <div class="nav__close" id="nav-close">
@@ -63,15 +70,17 @@
       <!--==================== HOME ====================-->
       <section class="home section" id="home">
         <div class="home__container container grid">
-          <div class="home__data">
-            <h2 class="home__subtitle">MAKE YOUR</h2>
-            <h1 class="home__title">BODY SHAPE</h1>
+          <div dir="rtl" class="home__data">
+            <h2 class="home__subtitle">کشف کن</h2>
+            <h1 class="home__title">بهترین نسخه خودتو !</h1>
             <p class="home__description">
-              In here we will help you to shape and build your ideal body and
-              live your life to the fullest.
+              ورزش و تناسب اندام تنها در مورد تغییر ظاهر نیست، بلکه در مورد
+              تغییر دیدگاه زندگیست. هر حرکت و هر قدم، تو رو به سمت قدرتی بیشتر و
+              اراده‌ای استوارتر هدایت می‌کنه.
             </p>
             <a href="#" class="button button__flex">
-              Get Started <i class="ri-arrow-right-line"></i>
+              <i class="ri-arrow-right-line"></i>
+              استارت شو بزن
             </a>
           </div>
           <div class="home__images">
@@ -96,30 +105,85 @@
           <img src="assets/img/logo4.png" alt="logo image" class="logos__img" />
         </div>
       </section>
+      <!--==================== ABOUT ====================-->
+      <section class="program section" id="program">
+        <div class="container">
+          <div class="about__container grid">
+            <div class="about__card" dir="rtl">
+              <div class="section__data">
+                <h2 class="section__subtitle">ما رو بیشتر بشناس!</h2>
+                <div class="section__titles">
+                  <h1 class="section__title">
+                    درباره
+                    <span class="logo__title"
+                      >LULU<span class="logo__subtitle">Gym </span></span
+                    >
+                  </h1>
+                </div>
+              </div>
+              <p>
+                اینجا، شبیه خونه‌ی دومه. هر کسی عضوی از یه خانواده‌ی بزرگ و پر
+                از حمایته. ما با هم تجربه‌هامونو به اشتراک می‌ذاریم، همدیگه رو
+                بالا می‌کشیم و با هر تمرین، با هر خنده، یه قدم به سمت موفقیت‌های
+                بزرگ‌تر برمی‌داریم. افتخار می‌کنیم به این فضای صمیمی و پیشرفت
+                دسته‌جمعی. دعوتت می‌کنیم تا تو هم تو این ماجراجویی هیجان‌انگیز
+                شریک بشی.<br /><br />
+                هر حرکت، هر لبخند، و هر برد کوچیک، یه بخش از قصه‌ی موفقیت ماست.
+                بیا با ما، تو این راه پر از شور و هیجان، قدم بزن و به سمت فردایی
+                درخشان و پر از سلامتی بریم!
+              </p>
+            </div>
+            <div>
+              <div class="about__image__container">
+                <div class="about__image__subcontainer">
+                  <div class="about__image__item">
+                    <img src="assets/img/about3.jpg" alt="about" />
+                  </div>
+                </div>
+                <div class="about__image__subcontainer">
+                  <!-- <div class="about__image__item">
+                    <img src="assets/img/choose-img.png" alt="about" />
+                  </div> -->
+                  <div class="about__image__item">
+                    <img src="assets/img/about2.jpg" alt="about" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--==================== PROGRAM ====================-->
       <section class="program section" id="program">
         <div class="container">
           <div class="section__data">
-            <h2 class="section__subtitle">Our Program</h2>
+            <h2 class="section__subtitle">قدرت و زیبایی، با هم</h2>
             <div class="section__titles">
-              <h1 class="section__title-border">BUILD YOUR</h1>
-              <h1 class="section__title">BEST BODY</h1>
+              <!-- <h1 class="section__title-border">BUILD YOUR</h1> -->
+              <h1 class="section__title">
+                <span class="logo__title"
+                  >LULU<span class="logo__subtitle">Gym </span></span
+                >
+                برنامه های
+              </h1>
             </div>
           </div>
           <div class="program__container grid">
             <article class="program__card">
               <div class="program__shape">
-                <img
+                <!-- <img
                   src="assets/img/program1.png"
                   alt="program img"
                   class="program__img"
-                />
+                /> -->
+                <i class="program__img fa-solid fa-weight-hanging"></i>
               </div>
-              <h3 class="program__title">Flex Muscle</h3>
-              <p class="program__description">
-                Creating tension that's temporarily making the muscle fibers
-                smaller or contracted.
+              <h3 class="program__title">Zumba</h3>
+              <p dir="rtl" class="program__description">
+                زومبا یه پارتی ورزشیه که توش کالری می‌سوزونی و حسابی خوش
+                می‌گذرونی. ریتم‌های شاد و پرانرژی رو دنبال کن و به جمع ما
+                بپیوند!
               </p>
               <a href="#" class="program__button">
                 <i class="ri-arrow-right-line"></i>
@@ -127,16 +191,18 @@
             </article>
             <article class="program__card">
               <div class="program__shape">
-                <img
+                <!-- <img
                   src="assets/img/program2.png"
                   alt="program img"
                   class="program__img"
-                />
+                /> -->
+                <i class="program__img fa-solid fa-heart-pulse"></i>
               </div>
-              <h3 class="program__title">Cardio Exercise</h3>
-              <p class="program__description">
-                Exercise your heart rate up and keeps it up for a prolonged
-                period of time.
+              <h3 class="program__title">Functional Fitness</h3>
+              <p dir="rtl" class="program__description">
+                فیتنس کاربردی یعنی آماده‌سازی بدن برای هر کاری که تو روزمره‌ات
+                انجام می‌دی. با هر تمرین، خودتو برای یه زندگی پرانرژی و سرزنده
+                آماده کن.
               </p>
               <a href="#" class="program__button">
                 <i class="ri-arrow-right-line"></i>
@@ -144,16 +210,18 @@
             </article>
             <article class="program__card">
               <div class="program__shape">
-                <img
+                <!-- <img
                   src="assets/img/program3.png"
                   alt="program img"
                   class="program__img"
-                />
+                /> -->
+                <i class="program__img fa-solid fa-gem"></i>
               </div>
-              <h3 class="program__title">Basic Yoga</h3>
-              <p class="program__description">
-                Diaphragmatic this is the most common breathing technique you'll
-                find in yoga.
+              <h3 class="program__title">Yoga</h3>
+              <p dir="rtl" class="program__description">
+                یوگا فقط ورزش نیست، یه سفره که توش آرامش و انرژی مثل رودخونه
+                جاریه. نفس‌هاتو عمیق بکش و اجازه بده هر حرکت، تو رو به سمت
+                نسخه‌ای بهتر از خودت ببره.
               </p>
               <a href="#" class="program__button">
                 <i class="ri-arrow-right-line"></i>
@@ -161,16 +229,17 @@
             </article>
             <article class="program__card">
               <div class="program__shape">
-                <img
+                <!-- <img
                   src="assets/img/program4.png"
                   alt="program img"
                   class="program__img"
-                />
+                /> -->
+                <i class="program__img fa-solid fa-diamond"></i>
               </div>
-              <h3 class="program__title">Weight Lifting</h3>
-              <p class="program__description">
-                Attempts a maximum weight single lift of a barbell loaded with
-                weight plates.
+              <h3 class="program__title">Pilates</h3>
+              <p dir="rtl" class="program__description">
+                پیلاتس یه چالش شیرینه برای همه عضلاتت. با هر تمرین، احساس قدرت و
+                کنترل بیشتری پیدا می‌کنی و به بدنی انعطاف‌پذیر و متعادل می‌رسی.
               </p>
               <a href="#" class="program__button">
                 <i class="ri-arrow-right-line"></i>
@@ -184,20 +253,61 @@
       <section class="choose section" id="choose">
         <div class="choose__overflow">
           <div class="choose__container container grid">
-            <div class="choose__content">
+            <div dir="rtl" class="choose__content">
               <div class="section__data">
-                <h2 class="section__subtitle">Best Reason</h2>
+                <h2 class="section__subtitle">ویژگی های منحصر به فرد</h2>
                 <div class="section__titles">
-                  <h1 class="section__title-border">WHY</h1>
-                  <h1 class="section__title">CHOOSE US ?</h1>
+                  <h1 class="section__title">
+                    چرا
+                    <span class="logo__title"
+                      >LULU<span class="logo__subtitle">Gym </span></span
+                    >
+                  </h1>
                 </div>
               </div>
-              <p class="choose__description">
-                Choose your favorite class and start now. Remember the only bad
-                workout is the one you didn't do.
-              </p>
-
-              <div class="choose__data">
+              <!-- <p class="choose__description">
+                یه فضای دوست‌داشتنی و پرانرژیه که توش هر بانویی می‌تونه خودش
+                باشه و به اهداف تناسب اندامش برسه.
+              </p> -->
+              <div>
+                <div class="choose__option">
+                  <div class="choose__option__img">
+                    <i class="fa-solid fa-people-roof choose__option__img"></i>
+                  </div>
+                  <p class="choose__description">
+                    فضایی صمیمی و امن اینجا یه فضای دوست‌داشتنیه که توش می‌تونی
+                    خودت باشی و بدون دغدغه به اهداف تناسب اندامت برسی. ما اینجا
+                    یه محیط امن و حمایتی داریم که توش هر بانویی می‌تونه با
+                    اعتماد به نفس تمرین کنه و پیشرفت کنه.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="choose__option">
+                  <div class="choose__option__img">
+                    <i class="fa-solid fa-dumbbell choose__option__img"></i>
+                  </div>
+                  <p class="choose__description">
+                    تجهیزات مدرن و به‌روز هر چیزی که برای یه تمرین عالی لازم
+                    داری، اینجا هست. از دستگاه‌های کاردیو گرفته تا وزنه‌های
+                    مختلف، همه‌چیز تازه و به‌روزه تا تجربه‌ای بی‌نظیر از ورزش
+                    داشته باشی.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="choose__option">
+                  <div class="choose__option__img">
+                    <i class="fa-solid fa-medal choose__option__img"></i>
+                  </div>
+                  <p class="choose__description">
+                    مربیان حرفه‌ای مربیان ما نه تنها تخصص دارن، بلکه دلسوز و
+                    حامی هستن. اونا کنارت هستن تا بهترین نتایج رو بگیری و هر قدم
+                    از مسیرت رو با اطمینان برداری.
+                  </p>
+                </div>
+              </div>
+              <!-- <div class="choose__data">
                 <div class="choose__group">
                   <h3 class="choose__number">200+</h3>
                   <p class="choose__subtitle">Total Members</p>
@@ -214,7 +324,22 @@
                   <h3 class="choose__number">100+</h3>
                   <p class="choose__subtitle">Awards</p>
                 </div>
-              </div>
+              </div> -->
+              <!-- <div class="about__card" dir="rtl">
+                <p>
+                  باشگاه B2FITNESS، مکانی است که قهرمانان بزرگ بدنسازی و
+                  چهره‌های سرشناس را در خود جای داده است. ما به افتخار میزبانی
+                  از برخی از بهترین ورزشکاران و سلبریتی‌هایی که در رشته‌های خود
+                  درخشیده‌اند، می‌بالیم. تعهد ما به ارائه تجهیزات پیشرفته، محیطی
+                  حرفه‌ای و برنامه‌های تمرینی متنوع، باشگاه ما را به مرکزی برای
+                  تعالی و پیشرفت تبدیل کرده است.
+
+                  <br />
+                  باشگاه ما نه تنها یک مکان برای تمرین است، بلکه یک جامعه ورزشی
+                  است که در آن اعضا می‌توانند از تجربیات یکدیگر یاد بگیرند،
+                  یکدیگر را تشویق کنند و در نهایت، در کنار هم رشد کنند.
+                </p>
+              </div> -->
             </div>
             <div class="choose__images">
               <img
@@ -234,47 +359,18 @@
       <section class="pricing section" id="pricing">
         <div class="container">
           <div class="section__data">
-            <h2 class="section__subtitle">Pricing</h2>
+            <h2 class="section__subtitle">تعرفه ها</h2>
             <div class="section__titles">
-              <h1 class="section__title-border">OUR</h1>
-              <h1 class="section__title">SPECIAL PLAN</h1>
+              <h1 class="section__title">
+                <span class="logo__title"
+                  >LULU<span class="logo__subtitle">Gym </span></span
+                >
+                منتخب
+              </h1>
             </div>
           </div>
           <div class="pricing__container grid">
             <article class="pricing__card">
-              <header class="pricing__header">
-                <div class="pricing__shape">
-                  <img
-                    src="assets/img/pricing1.png"
-                    alt="pricing image"
-                    class="pricing__img"
-                  />
-                </div>
-                <h1 class="pricing__title">BASIC PACKAGE</h1>
-                <h2 class="pricing__number">$120</h2>
-              </header>
-              <ul class="pricing__list">
-                <li class="pricing__item">
-                  <i class="ri-checkbox-circle-line"></i>5 Days In A Week
-                </li>
-                <li class="pricing__item">
-                  <i class="ri-checkbox-circle-line"></i>01 Sweatshirt
-                </li>
-                <li class="pricing__item pricing__item-opacity">
-                  <i class="ri-checkbox-circle-line"></i>01 Bottle of Protein
-                </li>
-                <li class="pricing__item pricing__item-opacity">
-                  <i class="ri-checkbox-circle-line"></i>Access to Videos
-                </li>
-                <li class="pricing__item pricing__item-opacity">
-                  <i class="ri-checkbox-circle-line"></i>Muscle Stretching
-                </li>
-              </ul>
-              <a href="#" class="button button__flex pricing__button"
-                >Purchase Now <i class="ri-arrow-right-line"></i
-              ></a>
-            </article>
-            <article class="pricing__card pricing__card-active">
               <header class="pricing__header">
                 <div class="pricing__shape">
                   <img
@@ -283,31 +379,132 @@
                     class="pricing__img"
                   />
                 </div>
-                <h1 class="pricing__title">PREMIUM PACKAGE</h1>
-                <h2 class="pricing__number">$240</h2>
               </header>
               <ul class="pricing__list">
+                <h2 class="pricing__title">Zumba</h2>
+
                 <li class="pricing__item">
-                  <i class="ri-checkbox-circle-line"></i>5 Days In A Week
+                  <i class="ri-checkbox-circle-line"></i>8 sessions:
+                  <b>3,000T</b>
                 </li>
                 <li class="pricing__item">
-                  <i class="ri-checkbox-circle-line"></i>01 Sweatshirt
-                </li>
-                <li class="pricing__item">
-                  <i class="ri-checkbox-circle-line"></i>01 Bottle of Protein
-                </li>
-                <li class="pricing__item pricing__item-opacity">
-                  <i class="ri-checkbox-circle-line"></i>Access to Videos
-                </li>
-                <li class="pricing__item pricing__item-opacity">
-                  <i class="ri-checkbox-circle-line"></i>Muscle Stretching
+                  <i class="ri-checkbox-circle-line"></i>10 sessions:
+                  <b>3,500T</b>
                 </li>
               </ul>
               <a href="#" class="button button__flex pricing__button"
-                >Purchase Now <i class="ri-arrow-right-line"></i
+                >شروع کن <i class="ri-arrow-right-line"></i
               ></a>
             </article>
             <article class="pricing__card">
+              <header class="pricing__header">
+                <div class="pricing__shape">
+                  <img
+                    src="assets/img/pricing2.png"
+                    alt="pricing image"
+                    class="pricing__img"
+                  />
+                </div>
+                <!-- <h2 class="pricing__number">$240</h2> -->
+              </header>
+              <ul class="pricing__list">
+                <h2 class="pricing__title">Pilates</h2>
+
+                <li class="pricing__item">
+                  <i class="ri-checkbox-circle-line"></i>8 sessions:
+                  <b>3,000T</b>
+                </li>
+                <li class="pricing__item">
+                  <i class="ri-checkbox-circle-line"></i>10 sessions:
+                  <b>3,500T</b>
+                </li>
+              </ul>
+              <a href="#" class="button button__flex pricing__button"
+                >شروع کن <i class="ri-arrow-right-line"></i
+              ></a>
+            </article>
+            <article class="pricing__card">
+              <header class="pricing__header">
+                <div class="pricing__shape">
+                  <img
+                    src="assets/img/pricing2.png"
+                    alt="pricing image"
+                    class="pricing__img"
+                  />
+                </div>
+                <!-- <h2 class="pricing__number">$240</h2> -->
+              </header>
+              <ul class="pricing__list">
+                <h2 class="pricing__title">Yoga</h2>
+
+                <li class="pricing__item">
+                  <i class="ri-checkbox-circle-line"></i>8 sessions:
+                  <b>3,000T</b>
+                </li>
+
+                <li class="pricing__item">
+                  <i class="ri-checkbox-circle-line"></i> 10 sessions:<b
+                    >3,500T</b
+                  >
+                </li>
+              </ul>
+              <a href="#" class="button button__flex pricing__button"
+                >شروع کن <i class="ri-arrow-right-line"></i
+              ></a>
+            </article>
+            <article class="pricing__card">
+              <header class="pricing__header">
+                <div class="pricing__shape">
+                  <img
+                    src="assets/img/pricing2.png"
+                    alt="pricing image"
+                    class="pricing__img"
+                  />
+                </div>
+                <!-- <h2 class="pricing__number">$240</h2> -->
+              </header>
+              <ul class="pricing__list">
+                <h1 class="pricing__title">Functional Fitness</h1>
+                <li class="pricing__item">
+                  <i class="ri-checkbox-circle-line"></i>8 sessions:
+                  <b>2,500T</b>
+                </li>
+                <li class="pricing__item">
+                  <i class="ri-checkbox-circle-line"></i>10 sessions:
+                  <b>3,000T</b>
+                </li>
+              </ul>
+              <a href="#" class="button button__flex pricing__button"
+                >شروع کن <i class="ri-arrow-right-line"></i
+              ></a>
+            </article>
+            <article class="pricing__card">
+              <header class="pricing__header">
+                <div class="pricing__shape">
+                  <img
+                    src="assets/img/pricing2.png"
+                    alt="pricing image"
+                    class="pricing__img"
+                  />
+                </div>
+                <!-- <h2 class="pricing__number">$240</h2> -->
+              </header>
+              <ul class="pricing__list">
+                <h1 class="pricing__title">VIP Functional Fitness</h1>
+                <li class="pricing__item">
+                  <i class="ri-checkbox-circle-line"></i>8 sessions:
+                  <b>3,500T</b>
+                </li>
+                <li class="pricing__item">
+                  <i class="ri-checkbox-circle-line"></i>10 sessions:
+                  <b>4,500T</b>
+                </li>
+              </ul>
+              <a href="#" class="button button__flex pricing__button"
+                >شروع کن <i class="ri-arrow-right-line"></i
+              ></a>
+            </article>
+            <!-- <article class="pricing__card">
               <header class="pricing__header">
                 <div class="pricing__shape">
                   <img
@@ -337,9 +534,9 @@
                 </li>
               </ul>
               <a href="#" class="button button__flex pricing__button"
-                >Purchase Now <i class="ri-arrow-right-line"></i
+                >شروع کن <i class="ri-arrow-right-line"></i
               ></a>
-            </article>
+            </article> -->
           </div>
         </div>
       </section>
@@ -348,13 +545,11 @@
       <section class="calculate section">
         <div class="calculate__container container grid">
           <div class="calculate__content">
-            <div class="section__titles">
-              <h1 class="section__title-border">CALCULATE</h1>
-              <h1 class="section__title">YOUR BMI</h1>
+            <div dir="rtl" class="section__titles">
+              <h1 class="section__title">(BMI) شاخص سلامتی</h1>
             </div>
-            <p class="calculate__description">
-              The body mass index (BMI) calculator calculates body mass index
-              from your weight and height.
+            <p dir="rtl" class="calculate__description">
+              شاخص سلامتی خودتو حساب کن و ببین کجای مسیر سلامتی قرار داری!
             </p>
             <form class="calculate__form" id="calculate-form">
               <div class="calculate__box">
@@ -375,11 +570,9 @@
                 />
                 <label for="" class="calculate__label">kg</label>
               </div>
-              <button type="submit" class="button button--flex">
-                CALCULATE NOW
-              </button>
+              <button type="submit" class="button button--flex">محاسبه</button>
             </form>
-            <p class="calculate__message" id="calculate-message"></p>
+            <p dir="rtl" class="calculate__message" id="calculate-message"></p>
           </div>
           <img
             src="assets/img/calculate-img.png"
@@ -393,52 +586,93 @@
     <!--==================== FOOTER ====================-->
     <footer class="footer section" id="footer">
       <div class="footer__container container grid">
-        <div>
-          <a href="#" class="footer__logo"
-            ><img src="assets/img/logo-nav.png" alt="" />BEROTOT</a
-          >
-          <p class="footer__description">
-            Subscribe for company <br />
-            updates below
-          </p>
+        <div class="contant__info">
+          <div class="email__contact">
+            <a href="#" class="footer__logo">
+              <!-- <img src="assets/img/logo-nav.png" alt="" /> -->
+              <span class="logo__title"
+                >LULU<span class="logo__subtitle">Gym </span></span
+              ></a
+            >
+            <p dir="rtl" class="footer__description">
+              کلاستو انتخاب کن همین حالا !
+            </p>
 
-          <form action="" class="footer__form" id="contact-form">
-            <input
-              type="email"
-              name="user_email"
-              placeholder="Your Email"
-              id="contact-user"
-              class="footer__input"
-            />
-            <button type="submit" class="button">Subscribe</button>
-          </form>
-          <p class="footer__message" id="contact-message"></p>
+            <form action="" class="footer__form" id="contact-form">
+              <input
+                type="phone"
+                name="user_email"
+                placeholder="شماره تماس"
+                id="contact-user"
+                class="footer__input"
+              />
+              <div
+                type="text"
+                name=""
+                id="dropdown-selected"
+                class="footer__input drop__down__input"
+              >
+                انتخاب کلاس
+                <ul class="drop__down__content">
+                  <li><a>Zumba</a></li>
+                  <li><a>Pilates</a></li>
+                  <li><a>Yoga</a></li>
+                  <li><a>Functional Fitness</a></li>
+                  <li><a>VIP Functional Fitness</a></li>
+                </ul>
+              </div>
+              <button type="submit" class="button">ارسال</button>
+            </form>
+            <p dir="rtl" class="footer__message" id="contact-message"></p>
+          </div>
+          <div class="map__container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.7189524641003!2d51.468730075763744!3d35.80683237254702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e05a7a0b28af5%3A0x2f4a765aa6ffa48c!2sAtlas%20Mall!5e0!3m2!1sen!2s!4v1708965583523!5m2!1sen!2s"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div dir="rtl" style="width: 100%; padding: 2rem 1rem">
+              <address class="footer__description">
+                <div style="display: flex; gap: 2rem">
+                  <span class="footer__description">آدرس</span>
+                  نیاوران, اطلس مال, طبقه A4, واحد 619
+                </div>
+              </address>
+              <div style="display: flex; gap: 2rem">
+                <span class="footer__description">تماس</span>
+                <p dir="ltr" class="footer__description">+98935 699 12 99</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="footer__content">
+        <div dir="rtl" class="footer__content">
           <div>
-            <h3 class="footer__title">SERVICES</h3>
+            <h3 class="footer__title">خدمات</h3>
             <ul class="footer__links">
-              <li><a href="#" class="footer__link">Flex Muscle</a></li>
-              <li><a href="#" class="footer__link">Cardio Exercise</a></li>
-              <li><a href="#" class="footer__link">Basic Yoga</a></li>
-              <li><a href="#" class="footer__link">Weight LIfting</a></li>
+              <li><a href="#" class="footer__link">تمرین شخصی</a></li>
+              <li><a href="#" class="footer__link">کلاس‌های گروهی</a></li>
+              <li><a href="#" class="footer__link">برنامه‌های سلامتی</a></li>
+              <li><a href="#" class="footer__link">تمرین قدرتی</a></li>
             </ul>
           </div>
           <div>
-            <h3 class="footer__title">PRICING</h3>
+            <h3 class="footer__title">عضویت</h3>
             <ul class="footer__links">
-              <li><a href="#" class="footer__link">Basic</a></li>
-              <li><a href="#" class="footer__link">Premium</a></li>
-              <li><a href="#" class="footer__link">Diamond</a></li>
+              <li><a href="#" class="footer__link">مقدماتی</a></li>
+              <li><a href="#" class="footer__link">حرفه‌ای</a></li>
+              <li><a href="#" class="footer__link">نخبگان</a></li>
             </ul>
           </div>
           <div>
-            <h3 class="footer__title">COMPANY</h3>
+            <h3 class="footer__title">درباره ما</h3>
             <ul class="footer__links">
-              <li><a href="#" class="footer__link">About Us</a></li>
-              <li><a href="#" class="footer__link">Careers</a></li>
-              <li><a href="#" class="footer__link">Customers</a></li>
-              <li><a href="#" class="footer__link">Partners</a></li>
+              <li><a href="#" class="footer__link">داستان ما</a></li>
+              <li><a href="#" class="footer__link">نظرات</a></li>
+              <li><a href="#" class="footer__link">همکاری‌ها</a></li>
             </ul>
           </div>
         </div>
@@ -456,7 +690,7 @@
               href="https://www.twitter.com/"
               target="_blank"
               class="footer__social-link"
-              ><i class="ri-twitter-fill"></i
+              ><i class="ri-telegram-fill"></i
             ></a>
             <a
               href="https://www.instagram.com/"
@@ -465,8 +699,8 @@
               ><i class="ri-instagram-line"></i
             ></a>
           </ul>
-          <span class="footer__copy"
-            >&#169; Copyright Bedimcode. All rights reserved</span
+          <span dir="rtl" class="footer__copy"
+            >&#169; کپی رایت LULU GYM. تمام حقوق محفوظ است</span
           >
         </div>
       </div>
@@ -484,6 +718,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
+
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
   </body>

@@ -103,14 +103,14 @@ const calculateBmi = (e) => {
       kg = calculateKg.value,
       bmi = Math.round(kg / (cm * cm));
     if (bmi < 18.5) {
-      caclulateMessage.classList.add("color-green");
-      caclulateMessage.textContent = `Your BMI is ${bmi} and you are skinny 😌`;
+      caclulateMessage.classList.add("color-red");
+      caclulateMessage.textContent = `شاخص BMI شما ${bmi} هست و لاغر هستید 😌`;
     } else if (bmi < 25) {
       caclulateMessage.classList.add("color-green");
-      caclulateMessage.textContent = `Your BMI is ${bmi} and you are healthy 🥳`;
+      caclulateMessage.textContent = `شاخص BMI شما ${bmi} هست و تندرست هستید 🥳`;
     } else {
-      caclulateMessage.classList.add("color-green");
-      caclulateMessage.textContent = `Your BMI is ${bmi} and you are overweight 😌`;
+      caclulateMessage.classList.add("color-red");
+      caclulateMessage.textContent = `شاخص BMI شما ${bmi} هست و چاق هستید 😌`;
     }
 
     calculateCm.value = "";
@@ -148,17 +148,18 @@ const sendEmail = (e) => {
       .then((e) => {
         console.log(e);
         contactMessage.classList.add("color-green");
-        contactMessage.textContent = "You registered successfully 👌";
+        contactMessage.textContent = "با موفقیت ارسال شد 👌";
 
         setTimeout(() => {
           contactMessage.textContent = "";
           contactUser.value = "";
+          dropdownSelected.textContent = "";
         }, 5000);
       })
       .catch((error) => {
         contactMessage.classList.add("color-red");
 
-        contactMessage.textContent = "Oops! something went wrong...";
+        contactMessage.textContent = "متاسفانه مشکلی پیش اومد!";
 
         setTimeout(() => {
           contactMessage.textContent = "";
@@ -168,3 +169,13 @@ const sendEmail = (e) => {
 };
 
 contactForm.addEventListener("submit", sendEmail);
+
+const listItems = document.querySelectorAll(".drop__down__content li");
+const dropdownSelected = document.getElementById("dropdown-selected");
+listItems.forEach(function (li) {
+  li.addEventListener("click", function () {
+    // Get the text content of the clicked list item
+    var value = this.textContent || this.innerText;
+    dropdownSelected.textContent = value;
+  });
+});
